@@ -1,0 +1,251 @@
+<html class="sl-theme-light">
+  <head>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+      html, body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: content-box;
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+      }
+
+      div.page {
+        max-width: 1280px;
+        margin: 3vh auto 1em;
+        padding: 0em 2em;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        @media (min-width: 900px) {
+          flex-direction: row;
+          margin: 10vh auto 1em;
+        }
+      }
+
+      main {
+        max-width: 500px;
+        flex-shrink: 1;
+      }
+
+      img.logo {
+        height:68px;
+        width: auto;
+      }
+
+      aside {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      aside .showcase {
+        width: 100%;
+      }
+
+      h3 {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 0px;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 2.5rem;
+        padding: 0px;
+      }
+
+      hr {
+        width: 50%;
+        margin-bottom: 2em;
+        border-top: 0px;
+        border-bottom: 2px solid black;
+      }
+
+      section {
+        margin-bottom: 3em;
+      }
+
+      .features article {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+
+        font-size: 1.2rem;
+        font-family: sans-serif;
+
+        margin: 2em 0;
+      }
+
+      .features article .bullet {
+        font-size: 2rem;
+      }
+
+      .features article .point p {
+        margin: 0.6rem 0;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .features article .point p strong {}
+
+      section.center {
+        text-align: center;
+      }
+
+      a.button {
+        outline: none;
+        display: inline-block;
+        width: auto;
+        padding: 0.8rem 1rem 0.6rem;
+        font-family: sans-serif;
+        background: none;
+        border: 2px solid black;
+        font-size: 1.1rem;
+        color: #222222;
+        transition: background 100ms ease-in;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a.button:hover {
+        cursor: pointer;
+        background: rgba(0,0,0,0.1);
+        color: #000000;
+      }
+
+      a.button.text {
+        border: 2px transparent;
+        text-decoration: underline;
+      }
+
+      a.button.text:hover {
+        background: rgba(0,0,0,0.1);
+      }
+
+      aside .showcase {
+        max-width: 800px;
+      }
+
+      a.more {
+        font-size: 0.9rem;
+        color: #d53150;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+        line-height: 2.4;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <section>
+          <header>
+            <img class="logo" src="img/logo-mark.png" />
+            <h3>Melbourne <br>Bumper <br>Repair</h3>
+          </header>
+
+          <h1>The Detailing Difference.</h1>
+          
+          <div class="features">
+            <article>
+              <div class="bullet">
+                <sl-icon name=lightning-fill></sl-icon>
+              </div>
+              <div class="point">
+                <strong>We are experts.</strong>
+                <p>When it comes to interior car cleaning and exterior services, we are the experts. <a href="#see-our-work" class="more">See our work</a></p>
+              </div>
+            </article>
+
+            <article>
+              <div class="bullet">
+                <sl-icon name=battery-full></sl-icon>
+              </div>
+              <div class="point">
+                <strong>Range of services</strong>
+                <p>From head gasket to tires, full car care service has got you covered. <a href="#services-we-provide" class="more">See full list of services</a></p>
+            </div>
+            </article>
+
+            <article>
+              <div class="bullet">
+                <sl-icon name=geo-fill></sl-icon>
+              </div>
+              <div class="point">
+                <strong>We come to you</strong>
+                <p>We are a mobile car detailing company, so we come to you. <a href="#areas-we-cover" class="more">Our service areas</a></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="center">
+          <a class="button" href="tel:+61430125515">Call for a quote today</a>
+          <a class="button text" href="email:foo@bar.com">or via Email</a>
+        </section>
+      </main>
+      <aside>
+        <div class="showcase">
+          <sl-carousel pagination navigation mouse-dragging loop>
+            <sl-carousel-item>
+              <img
+                alt="..."
+                src="img/1.png"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="..."
+                src="img/2.png"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="..."
+                src="img/3.png"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="..."
+                src="img/4.png"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="..."
+                src="img/5.png"
+              />
+            </sl-carousel-item>
+          </sl-carousel>
+        </div>
+      </aside>
+    </div>
+  </body>
+
+</html>
